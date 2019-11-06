@@ -1,5 +1,4 @@
 import math
-import random
 
 first = int(input('Enter your number: '))
 print(hex(first))
