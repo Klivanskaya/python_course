@@ -1,7 +1,6 @@
 import string
-st = tuple(dir(string))
-print('Тупл с 5 последними атрибутами модуля string: ' , st[-5:])
+st = tuple(dir(string)[-5:])
+print('Тупл с 5 последними атрибутами модуля string: ' , st)
 result = list(st[-5:])
-index = 2
-result.insert (index , 'capwords')
+result.insert (2, 'capwords')
 print('Тупл с добавленной строкой capwords: ' , tuple(result))
