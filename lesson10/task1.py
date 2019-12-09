@@ -11,5 +11,5 @@ while lenst < 2:
 second = string.ascii_lowercase[4:]
 third = string.ascii_lowercase[:4]
 another = list(second + third)
-my_dict = dict(zip(s, another))
+my_dict = dict(zip(st, another))
 print(my_dict) 
