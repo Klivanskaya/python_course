@@ -1,0 +1,22 @@
+def get_number():
+    n = int(input('Enter your num: '))
+    if type(n) != int:
+        raise Exception('enter int number')
+    return n
+
+
+def get_presentation():
+    func = input('Enter presentation, hex, bin, oct: ')
+    if func == 'hex':
+        return hex
+    elif func == 'bin':
+        return bin
+    elif func == 'oct':
+        return oct  
+    else:
+        raise Exception('Enter presentation, hex, bin, oct')
+
+
+number = get_number()
+presentation = get_presentation()
+print(presentation(number))
